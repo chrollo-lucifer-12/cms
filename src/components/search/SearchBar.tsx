@@ -48,10 +48,12 @@ export function SearchBar({ onCardClick, isMobile = false }: SearchBarProps) {
 
     try {
       const response = await fetch(`/api/search?q=${encodeURIComponent(term)}`);
+
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
       const data = await response.json();
+      console.log(data)
       setState((prev) => ({ ...prev, searchedVideos: data, loading: false }));
     } catch (err) {
       toast.error('Something went wrong while searching for videos');

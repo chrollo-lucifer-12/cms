@@ -23,6 +23,7 @@ const VideoSearchCard: React.FC<VideoSearchCardProps> = ({
     const courseId = parent.courses[0].courseId;
     const videoUrl = `/courses/${courseId}/${parentId}/${videoId}`;
 
+
     // Customizable click handler which allows parent components to override default navigation behavior
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
       if (onCardClick) {

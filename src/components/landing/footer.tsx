@@ -74,7 +74,7 @@ const Footer = () => {
                 >
                   <GitHubLogo />
                 </Link>
-                
+
               </div>
             </div>
           </div>
