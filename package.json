@@ -5,9 +5,6 @@
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
-  "pnpm" : {
-    "onlyBuiltDependencies": ["bcrypt"]
-  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "prisma generate",
